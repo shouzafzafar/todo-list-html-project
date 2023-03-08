@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/1.2.2/marked.min.js"></script>
+    
+</head>
+<body>
+  <div class="todo-side-bar">
+      <div class="profile-box">
+         <div class="profile-picture">
+            <i class="fa fa-user" aria-hidden="true"></i>
+         </div>
+         <div class="user-details">
+            <h3 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;">Shouzaf</h3>
+         </div>
+
+      </div>
+      <div class="nav-bar-vertical">
+        <div class="vertical-menu">
+            <a href="#">All</a>
+            <a href="#">My Task</a>
+            <a href="#">Completed</a>
+            <a href="#">Backlog</a>
+            <!-- <a href="#">My Personal Notes &nbsp;<i class="fa fa-sticky-note"></i></a>  -->
+            <a href="notes.html" target="_blank" class="w3-button">My Personal Notes</a>
+        </div>
+       </div>
+  </div>
+  <div class="todo-main-section">
+    <section class="my-Day">
+        <div class="add-task-container">
+            <input type="text" class="add-task-input" placeholder="Add Task ...">
+            <div class="add-task-options">
+                <i class="fa fa-flag add-task-flag" aria-hidden="true"></i>
+                <input type="button" value="ADD" class="add-task-btn">
+                <div class="priority-check-box">
+                    <div class="arrow-up"></div>
+                    <span type="button" class="close">&times;</span>
+                    <input type="button" id="low-pri" value="Low"><br>
+                    <input type="button" id="med-pri" value="Medium"><br>
+                    <input type="button" id="high-pri" value="High">
+                </div>
+            </div>
+        </div>
+        <div class="todo-date-picker">
+            <div>    
+                <input placeholder="Select your date" type="text" name="checkIn" id="datepicker" value="" class="calendar"><i class="fa fa-calendar icon"></i><span class="pri-tag"></span>
+            </div>
+        
+        </div>
+        <div class="list-task">
+            <div class="date-row">
+                <h3 id="list-task-show-date"></h3>
+            </div>
+            <div class="list-box">
+
+            </div>
+
+        </div>
+        
+    </section>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
